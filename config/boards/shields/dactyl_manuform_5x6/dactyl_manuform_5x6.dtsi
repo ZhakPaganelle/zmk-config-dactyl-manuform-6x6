@@ -100,18 +100,18 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
 
             <&key_physical_attrs 100 100 400  500 0 0 0>,  // MX53 (row4 col4)
             <&key_physical_attrs 100 100 500  500 0 0 0>,  // MX54 (row4 col5)
-            <&key_physical_attrs 100 100 900  500 0 0 0>,  // MX55 (row4 col11)
-            <&key_physical_attrs 100 100 800  500 0 0 0>,  // MX56 (row4 col10)
+            <&key_physical_attrs 100 100 800  500 0 0 0>,  // MX55 (row4 col11)
+            <&key_physical_attrs 100 100 900  500 0 0 0>,  // MX56 (row4 col10)
 
             <&key_physical_attrs 100 100 500  600 0 0 0>,  // MX57 (row5 col4)
             <&key_physical_attrs 100 100 600  600 0 0 0>,  // MX58 (row5 col5)
-            <&key_physical_attrs 100 100 800  600 0 0 0>,  // MX59 (row5 col11)
-            <&key_physical_attrs 100 100 700  600 0 0 0>,  // MX60 (row5 col10)
+            <&key_physical_attrs 100 100 700  600 0 0 0>,  // MX59 (row5 col11)
+            <&key_physical_attrs 100 100 800  600 0 0 0>,  // MX60 (row5 col10)
 
             <&key_physical_attrs 100 100 500  700 0 0 0>,  // MX61 (row5 col2)
             <&key_physical_attrs 100 100 600  700 0 0 0>,  // MX62 (row5 col3)
-            <&key_physical_attrs 100 100 800  700 0 0 0>,  // MX63 (row5 col9)
-            <&key_physical_attrs 100 100 700  700 0 0 0>;  // MX64 (row5 col8)
+            <&key_physical_attrs 100 100 700  700 0 0 0>,  // MX63 (row5 col9)
+            <&key_physical_attrs 100 100 800  700 0 0 0>;  // MX64 (row5 col8)
     };
 
     kscan0: kscan {
