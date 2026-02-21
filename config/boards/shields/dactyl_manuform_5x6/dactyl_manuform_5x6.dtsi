@@ -34,7 +34,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
     physical_layout: physical_layout_0 {
     compatible = "zmk,physical-layout";
     display-name = "Custom Layout";
-    transform = <&keymap_transform_0>;
+    transform = <&default_transform>;
 
     keys  //                 w   h  x    y
         = < &key_physical_attrs 100 100 0    0   > // MX1
