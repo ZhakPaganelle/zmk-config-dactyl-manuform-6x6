@@ -37,79 +37,95 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
     transform = <&default_transform>;
 
     keys  //                 w   h  x    y
-        = < &key_physical_attrs 100 100 0    0   > // MX1
-        , < &key_physical_attrs 100 100 100  0   > // MX2
-        , < &key_physical_attrs 100 100 200  0   > // MX3
-        , < &key_physical_attrs 100 100 300  0   > // MX4
-        , < &key_physical_attrs 100 100 400  0   > // MX5
-        , < &key_physical_attrs 100 100 500  0   > // MX6
-        , < &key_physical_attrs 100 100 900  0   > // MX7
-        , < &key_physical_attrs 100 100 800  0   > // MX8
-        , < &key_physical_attrs 100 100 700  0   > // MX9
-        , < &key_physical_attrs 100 100 600  0   > // MX10
-        , < &key_physical_attrs 100 100 500  0   > // MX11
-        , < &key_physical_attrs 100 100 400  0   > // MX12
+        // Левая половина - основные ряды
+        = < &key_physical_attrs 100 100 0    0   > // MX1  (row0 col0)
+        , < &key_physical_attrs 100 100 100  0   > // MX2  (row0 col1)
+        , < &key_physical_attrs 100 100 200  0   > // MX3  (row0 col2)
+        , < &key_physical_attrs 100 100 300  0   > // MX4  (row0 col3)
+        , < &key_physical_attrs 100 100 400  0   > // MX5  (row0 col4)
+        , < &key_physical_attrs 100 100 500  0   > // MX6  (row0 col5)
 
-        , < &key_physical_attrs 100 100 0    100 > // MX13
-        , < &key_physical_attrs 100 100 100  100 > // MX14
-        , < &key_physical_attrs 100 100 200  100 > // MX15
-        , < &key_physical_attrs 100 100 300  100 > // MX16
-        , < &key_physical_attrs 100 100 400  100 > // MX17
-        , < &key_physical_attrs 100 100 500  100 > // MX18
-        , < &key_physical_attrs 100 100 900  100 > // MX19
-        , < &key_physical_attrs 100 100 800  100 > // MX20
-        , < &key_physical_attrs 100 100 700  100 > // MX21
-        , < &key_physical_attrs 100 100 600  100 > // MX22
-        , < &key_physical_attrs 100 100 500  100 > // MX23
-        , < &key_physical_attrs 100 100 400  100 > // MX24
+        // Правая половина - основные ряды (зеркально)
+        , < &key_physical_attrs 100 100 800  0   > // MX7  (row0 col11)
+        , < &key_physical_attrs 100 100 900  0   > // MX8  (row0 col10)
+        , < &key_physical_attrs 100 100 1000 0   > // MX9  (row0 col9)
+        , < &key_physical_attrs 100 100 1100 0   > // MX10 (row0 col8)
+        , < &key_physical_attrs 100 100 1200 0   > // MX11 (row0 col7)
+        , < &key_physical_attrs 100 100 1300 0   > // MX12 (row0 col6)
 
-        , < &key_physical_attrs 100 100 0    200 > // MX25
-        , < &key_physical_attrs 100 100 100  200 > // MX26
-        , < &key_physical_attrs 100 100 200  200 > // MX27
-        , < &key_physical_attrs 100 100 300  200 > // MX28
-        , < &key_physical_attrs 100 100 400  200 > // MX29
-        , < &key_physical_attrs 100 100 500  200 > // MX30
-        , < &key_physical_attrs 100 100 900  200 > // MX31
-        , < &key_physical_attrs 100 100 800  200 > // MX32
-        , < &key_physical_attrs 100 100 700  200 > // MX33
-        , < &key_physical_attrs 100 100 600  200 > // MX34
-        , < &key_physical_attrs 100 100 500  200 > // MX35
-        , < &key_physical_attrs 100 100 400  200 > // MX36
+        // Второй ряд левая половина
+        , < &key_physical_attrs 100 100 0    100 > // MX13 (row1 col0)
+        , < &key_physical_attrs 100 100 100  100 > // MX14 (row1 col1)
+        , < &key_physical_attrs 100 100 200  100 > // MX15 (row1 col2)
+        , < &key_physical_attrs 100 100 300  100 > // MX16 (row1 col3)
+        , < &key_physical_attrs 100 100 400  100 > // MX17 (row1 col4)
+        , < &key_physical_attrs 100 100 500  100 > // MX18 (row1 col5)
 
-        , < &key_physical_attrs 100 100 0    300 > // MX37
-        , < &key_physical_attrs 100 100 100  300 > // MX38
-        , < &key_physical_attrs 100 100 200  300 > // MX39
-        , < &key_physical_attrs 100 100 300  300 > // MX40
-        , < &key_physical_attrs 100 100 400  300 > // MX41
-        , < &key_physical_attrs 100 100 500  300 > // MX42
-        , < &key_physical_attrs 100 100 900  300 > // MX43
-        , < &key_physical_attrs 100 100 800  300 > // MX44
-        , < &key_physical_attrs 100 100 700  300 > // MX45
-        , < &key_physical_attrs 100 100 600  300 > // MX46
-        , < &key_physical_attrs 100 100 500  300 > // MX47
-        , < &key_physical_attrs 100 100 400  300 > // MX48
+        // Второй ряд правая половина
+        , < &key_physical_attrs 100 100 800  100 > // MX19 (row1 col11)
+        , < &key_physical_attrs 100 100 900  100 > // MX20 (row1 col10)
+        , < &key_physical_attrs 100 100 1000 100 > // MX21 (row1 col9)
+        , < &key_physical_attrs 100 100 1100 100 > // MX22 (row1 col8)
+        , < &key_physical_attrs 100 100 1200 100 > // MX23 (row1 col7)
+        , < &key_physical_attrs 100 100 1300 100 > // MX24 (row1 col6)
 
-        , < &key_physical_attrs 100 100 200  400 > // MX49
-        , < &key_physical_attrs 100 100 300  400 > // MX50
-        , < &key_physical_attrs 100 100 700  400 > // MX51
-        , < &key_physical_attrs 100 100 600  400 > // MX52
+        // Третий ряд левая половина
+        , < &key_physical_attrs 100 100 0    200 > // MX25 (row2 col0)
+        , < &key_physical_attrs 100 100 100  200 > // MX26 (row2 col1)
+        , < &key_physical_attrs 100 100 200  200 > // MX27 (row2 col2)
+        , < &key_physical_attrs 100 100 300  200 > // MX28 (row2 col3)
+        , < &key_physical_attrs 100 100 400  200 > // MX29 (row2 col4)
+        , < &key_physical_attrs 100 100 500  200 > // MX30 (row2 col5)
 
-        , < &key_physical_attrs 100 100 400  500 > // MX53
-        , < &key_physical_attrs 100 100 500  500 > // MX54
-        , < &key_physical_attrs 100 100 900  500 > // MX55
-        , < &key_physical_attrs 100 100 800  500 > // MX56
+        // Третий ряд правая половина
+        , < &key_physical_attrs 100 100 800  200 > // MX31 (row2 col11)
+        , < &key_physical_attrs 100 100 900  200 > // MX32 (row2 col10)
+        , < &key_physical_attrs 100 100 1000 200 > // MX33 (row2 col9)
+        , < &key_physical_attrs 100 100 1100 200 > // MX34 (row2 col8)
+        , < &key_physical_attrs 100 100 1200 200 > // MX35 (row2 col7)
+        , < &key_physical_attrs 100 100 1300 200 > // MX36 (row2 col6)
 
-        , < &key_physical_attrs 100 100 500  600 > // MX57
-        , < &key_physical_attrs 100 100 600  600 > // MX58
-        , < &key_physical_attrs 100 100 800  600 > // MX59
-        , < &key_physical_attrs 100 100 700  600 > // MX60
+        // Четвертый ряд левая половина
+        , < &key_physical_attrs 100 100 0    300 > // MX37 (row3 col0)
+        , < &key_physical_attrs 100 100 100  300 > // MX38 (row3 col1)
+        , < &key_physical_attrs 100 100 200  300 > // MX39 (row3 col2)
+        , < &key_physical_attrs 100 100 300  300 > // MX40 (row3 col3)
+        , < &key_physical_attrs 100 100 400  300 > // MX41 (row3 col4)
+        , < &key_physical_attrs 100 100 500  300 > // MX42 (row3 col5)
 
-        , < &key_physical_attrs 100 100 500  700 > // MX61
-        , < &key_physical_attrs 100 100 600  700 > // MX62
-        , < &key_physical_attrs 100 100 800  700 > // MX63
-        , < &key_physical_attrs 100 100 700  700 > // MX64
+        // Четвертый ряд правая половина
+        , < &key_physical_attrs 100 100 800  300 > // MX43 (row3 col11)
+        , < &key_physical_attrs 100 100 900  300 > // MX44 (row3 col10)
+        , < &key_physical_attrs 100 100 1000 300 > // MX45 (row3 col9)
+        , < &key_physical_attrs 100 100 1100 300 > // MX46 (row3 col8)
+        , < &key_physical_attrs 100 100 1200 300 > // MX47 (row3 col7)
+        , < &key_physical_attrs 100 100 1300 300 > // MX48 (row3 col6)
+
+        // Большие пальцы - верхний ряд
+        , < &key_physical_attrs 100 100 200  400 > // MX49 (row4 col2)
+        , < &key_physical_attrs 100 100 300  400 > // MX50 (row4 col3)
+        , < &key_physical_attrs 100 100 1000 400 > // MX51 (row4 col9)
+        , < &key_physical_attrs 100 100 1100 400 > // MX52 (row4 col8)
+
+        // Большие пальцы - средний ряд
+        , < &key_physical_attrs 100 100 400  500 > // MX53 (row4 col4)
+        , < &key_physical_attrs 100 100 500  500 > // MX54 (row4 col5)
+        , < &key_physical_attrs 100 100 900  500 > // MX55 (row4 col11)
+        , < &key_physical_attrs 100 100 800  500 > // MX56 (row4 col10)
+
+        // Большие пальцы - нижний ряд левый кластер
+        , < &key_physical_attrs 100 100 500  600 > // MX57 (row5 col4)
+        , < &key_physical_attrs 100 100 600  600 > // MX58 (row5 col5)
+        , < &key_physical_attrs 100 100 800  600 > // MX59 (row5 col11)
+        , < &key_physical_attrs 100 100 700  600 > // MX60 (row5 col10)
+
+        // Большие пальцы - самый нижний ряд
+        , < &key_physical_attrs 100 100 500  700 > // MX61 (row5 col2)
+        , < &key_physical_attrs 100 100 600  700 > // MX62 (row5 col3)
+        , < &key_physical_attrs 100 100 800  700 > // MX63 (row5 col9)
+        , < &key_physical_attrs 100 100 700  700 > // MX64 (row5 col8)
         ;
-};
+    };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
