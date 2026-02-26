@@ -10,24 +10,27 @@
     default_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
         columns = <12>;
-        rows = <6>;
+        rows = <7>;
+
 // | MX1  | MX2  | MX3  | MX4  | MX5  | MX6  |                 | MX7  | MX8  | MX9  | MX10 | MX11 | MX12 |
 // | MX13 | MX14 | MX15 | MX16 | MX17 | MX18 |                 | MX19 | MX20 | MX21 | MX22 | MX23 | MX24 |
 // | MX25 | MX26 | MX27 | MX28 | MX29 | MX30 |                 | MX31 | MX32 | MX33 | MX34 | MX35 | MX36 |
 // | MX37 | MX38 | MX39 | MX40 | MX41 | MX42 |                 | MX43 | MX44 | MX45 | MX46 | MX47 | MX48 |
-//               | MX49 | MX50 |                                             | MX51 | MX52 |
-//                             | MX53 | MX54 |                 | MX55 | MX56 |
-//                                    | MX57 | MX58 |   | MX59 | MX60 |
-//                                    | MX61 | MX62 |   | MX63 | MX64 |
+// | MX49 | MX50 | MX51 | MX52 | MX53 | MX54 |                 | MX55 | MX56 | MX57 | MX58 | MX59 | MX60 |
+//               | MX61 | MX62 |                                             | MX63 | MX64 |
+//                             | MX65 | MX66 |                 | MX67 | MX68 |
+//                                    | MX69 | MX70 |   | MX71 | MX72 |
+//                                    | MX73 | MX74 |   | MX75 | MX76 |
         map = <
 RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)                   RC(0,11) RC(0,10) RC(0,9) RC(0,8) RC(0,7) RC(0,6)
 RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5)                   RC(1,11) RC(1,10) RC(1,9) RC(1,8) RC(1,7) RC(1,6)
 RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                   RC(2,11) RC(2,10) RC(2,9) RC(2,8) RC(2,7) RC(2,6)
 RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,10) RC(3,9) RC(3,8) RC(3,7) RC(3,6)
-                RC(4,2) RC(4,3)                                                     RC(4,9) RC(4,8)
-                                RC(4,4) RC(4,5)                   RC(4,11) RC(4,10)
-                                        RC(5,4) RC(5,5)  RC(5,11) RC(5,10)
-                                        RC(5,2) RC(5,3)  RC(5,9)  RC(5,8)
+RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)                   RC(4,11) RC(4,10) RC(4,9) RC(4,8) RC(4,7) RC(4,6)
+                RC(5,2) RC(5,3)                                                     RC(5,9) RC(5,8)
+                                RC(5,4) RC(5,5)                   RC(5,11) RC(5,10)
+                                        RC(6,4) RC(6,5)  RC(6,11) RC(6,10)
+                                        RC(6,2) RC(6,3)  RC(6,9)  RC(6,8)
         >;
     };
 
@@ -36,6 +39,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
         display-name = "Custom Layout";
         transform = <&default_transform>;
 
+        // Each key: <&key_physical_attrs width height x y rotation rx ry>
         keys =
             <&key_physical_attrs 100 100 0    0 0 0 0>,   // MX1  (row0 col0)
             <&key_physical_attrs 100 100 100  0 0 0 0>,   // MX2  (row0 col1)
@@ -93,25 +97,39 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
             <&key_physical_attrs 100 100 1200 300 0 0 0>,  // MX47 (row3 col7)
             <&key_physical_attrs 100 100 1300 300 0 0 0>,  // MX48 (row3 col6)
 
-            <&key_physical_attrs 100 100 200  400 0 0 0>,  // MX49 (row4 col2)
-            <&key_physical_attrs 100 100 300  400 0 0 0>,  // MX50 (row4 col3)
-            <&key_physical_attrs 100 100 1000 400 0 0 0>,  // MX51 (row4 col9)
-            <&key_physical_attrs 100 100 1100 400 0 0 0>,  // MX52 (row4 col8)
+            <&key_physical_attrs 100 100 0    400 0 0 0>,  // MX49 (row4 col0)
+            <&key_physical_attrs 100 100 100  400 0 0 0>,  // MX50 (row4 col1)
+            <&key_physical_attrs 100 100 200  400 0 0 0>,  // MX51 (row4 col2)
+            <&key_physical_attrs 100 100 300  400 0 0 0>,  // MX52 (row4 col3)
+            <&key_physical_attrs 100 100 400  400 0 0 0>,  // MX53 (row4 col4)
+            <&key_physical_attrs 100 100 500  400 0 0 0>,  // MX54 (row4 col5)
 
-            <&key_physical_attrs 100 100 400  500 0 0 0>,  // MX53 (row4 col4)
-            <&key_physical_attrs 100 100 500  500 0 0 0>,  // MX54 (row4 col5)
-            <&key_physical_attrs 100 100 800  500 0 0 0>,  // MX55 (row4 col11)
-            <&key_physical_attrs 100 100 900  500 0 0 0>,  // MX56 (row4 col10)
+            <&key_physical_attrs 100 100 800  400 0 0 0>,  // MX55 (row4 col11)
+            <&key_physical_attrs 100 100 900  400 0 0 0>,  // MX56 (row4 col10)
+            <&key_physical_attrs 100 100 1000 400 0 0 0>,  // MX57 (row4 col9)
+            <&key_physical_attrs 100 100 1100 400 0 0 0>,  // MX58 (row4 col8)
+            <&key_physical_attrs 100 100 1200 400 0 0 0>,  // MX59 (row4 col7)
+            <&key_physical_attrs 100 100 1300 400 0 0 0>,  // MX60 (row4 col6)
 
-            <&key_physical_attrs 100 100 500  600 0 0 0>,  // MX57 (row5 col4)
-            <&key_physical_attrs 100 100 600  600 0 0 0>,  // MX58 (row5 col5)
-            <&key_physical_attrs 100 100 700  600 0 0 0>,  // MX59 (row5 col11)
-            <&key_physical_attrs 100 100 800  600 0 0 0>,  // MX60 (row5 col10)
+            <&key_physical_attrs 100 100 200  500 0 0 0>,  // MX61 (row5 col2)
+            <&key_physical_attrs 100 100 300  500 0 0 0>,  // MX62 (row5 col3)
+            <&key_physical_attrs 100 100 1000 500 0 0 0>,  // MX63 (row5 col9)
+            <&key_physical_attrs 100 100 1100 500 0 0 0>,  // MX64 (row5 col8)
 
-            <&key_physical_attrs 100 100 500  700 0 0 0>,  // MX61 (row5 col2)
-            <&key_physical_attrs 100 100 600  700 0 0 0>,  // MX62 (row5 col3)
-            <&key_physical_attrs 100 100 700  700 0 0 0>,  // MX63 (row5 col9)
-            <&key_physical_attrs 100 100 800  700 0 0 0>;  // MX64 (row5 col8)
+            <&key_physical_attrs 100 100 400  600 0 0 0>,  // MX65 (row5 col4)
+            <&key_physical_attrs 100 100 500  600 0 0 0>,  // MX66 (row5 col5)
+            <&key_physical_attrs 100 100 800  600 0 0 0>,  // MX67 (row5 col11)
+            <&key_physical_attrs 100 100 900  600 0 0 0>,  // MX68 (row5 col10)
+
+            <&key_physical_attrs 100 100 500  700 0 0 0>,  // MX69 (row6 col4)
+            <&key_physical_attrs 100 100 600  700 0 0 0>,  // MX70 (row6 col5)
+            <&key_physical_attrs 100 100 700  700 0 0 0>,  // MX71 (row6 col11)
+            <&key_physical_attrs 100 100 800  700 0 0 0>,  // MX72 (row6 col10)
+
+            <&key_physical_attrs 100 100 500  800 0 0 0>,  // MX73 (row6 col2)
+            <&key_physical_attrs 100 100 600  800 0 0 0>,  // MX74 (row6 col3)
+            <&key_physical_attrs 100 100 700  800 0 0 0>,  // MX75 (row6 col9)
+            <&key_physical_attrs 100 100 800  800 0 0 0>;  // MX76 (row6 col8)
     };
 
     kscan0: kscan {
@@ -120,7 +138,8 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
 
         diode-direction = "col2row";
         row-gpios
-            = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
