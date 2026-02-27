@@ -1,5 +1,7 @@
 config SHIELD_DACTYL_MANUFORM_6x6_LEFT
     def_bool $(shields_list_contains,dactyl_manuform_6x6_left)
+    select ZMK_STUDIO
 
 config SHIELD_DACTYL_MANUFORM_6x6_RIGHT
     def_bool $(shields_list_contains,dactyl_manuform_6x6_right)
+    select ZMK_STUDIO
