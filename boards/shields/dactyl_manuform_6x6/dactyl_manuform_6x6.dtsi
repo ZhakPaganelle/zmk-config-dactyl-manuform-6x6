@@ -123,12 +123,12 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)                   RC(4,11) RC(4,
 
             <&key_physical_attrs 100 100 500  700 0 0 0>,  // MX69 (row6 col4)
             <&key_physical_attrs 100 100 600  700 0 0 0>,  // MX70 (row6 col5)
-            <&key_physical_attrs 100 100 700  700 0 0 0>,  // MX71 (row6 col11)
+            <&key_physical_attrs 100 100 800  700 0 0 0>,  // MX71 (row6 col11)
             <&key_physical_attrs 100 100 900  700 0 0 0>,  // MX72 (row6 col10)
 
             <&key_physical_attrs 100 100 500  800 0 0 0>,  // MX73 (row6 col2)
             <&key_physical_attrs 100 100 600  800 0 0 0>,  // MX74 (row6 col3)
-            <&key_physical_attrs 100 100 700  800 0 0 0>,  // MX75 (row6 col9)
+            <&key_physical_attrs 100 100 800  800 0 0 0>,  // MX75 (row6 col9)
             <&key_physical_attrs 100 100 900  800 0 0 0>;  // MX76 (row6 col8)
     };
 
