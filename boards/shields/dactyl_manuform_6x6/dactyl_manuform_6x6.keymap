@@ -22,7 +22,7 @@
                 &kp TAB   &kp Z  &kp X    &kp C  &kp V  &kp B                    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
                                  &kp LBKT &kp RBKT                                             &kp PLUS  &kp EQUAL
                                             &lt LWR ESC    &mt LSHFT SPACE       &kp RET   &mo RSE
-                                            &mt LCTRL TAB  &mt LC(LSHFT) HOME    &kp END   &kp RCTRL
+                                            &mt LCTRL TAB  &mt LC(LSHFT) HOME    &kp END   &kp DEL
                                             &kp LALT       &kp BSPC              &kp LGUI  &kp LALT
             >;
         };
