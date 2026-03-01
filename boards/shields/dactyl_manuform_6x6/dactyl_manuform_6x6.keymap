@@ -28,15 +28,15 @@
 
         lower_layer {
             bindings = <
-                &none     &none    &none    &none      &none    &none           &none     &none    &none    &none     &none     &none
-                &kp GRAVE &kp EXCL &kp AT   &kp HASH   &kp DLLR &kp PRCNT       &kp CARET &kp AMPS &kp STAR &kp LPAR  &kp RPAR  &kp BSPC
-                &none     &none    &none    &none      &kp LBKT &none           &none     &kp RBKT &none    &none     &none     &kp UNDER
-                &kp TILDE &kp EXCL &kp AT   &kp HASH   &kp DLLR &kp PRCNT       &kp CARET &kp AMPS &kp STAR &kp LPAR  &kp RPAR  &kp DQT
-                &none     &none    &none    &none      &none    &none           &kp PIPE  &kp PIPE &kp LT   &kp GT    &kp BSLH  &none
-                                   &trans   &trans                                                   &trans &trans
-                                                       &trans   &trans          &trans &trans
-                                                       &trans   &trans          &trans &trans
-                                                       &trans   &trans          &trans &trans
+                &none       &none     &none     &none      &none      &none           &none     &none    &none    &none     &none        &none
+                &none       &none     &none     &kp C_STOP &kp C_NEXT &kp C_PREV      &none     &none    &none    &none     &KP C_SLEEP     &none
+                &kp LC(INS) &none     &kp PG_UP &kp UP     &kp PG_DN  &kp C_VOL_UP    &none     &none    &none    &none     &none        &none
+                &kp LS(INS) &kp INS   &kp LEFT  &kp DOWN   &kp RIGHT  &kp C_VOL_DN    &none     &none    &none    &none     &none        &none
+                &none       &kp PSCRN &kp HOME  &none      &kp END    &kp C_PP        &none     &none    &none    &none     &none        &none
+                                      &kp LPAR  &kp RPAR                                                 &trans   &trans
+                                                           &trans   &trans            &trans &trans
+                                                           &trans   &trans            &trans &trans
+                                                           &trans   &trans            &trans &trans
             >;
         };
 
