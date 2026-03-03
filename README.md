@@ -1,19 +1,21 @@
 # dactyl-manuform-6x6-zmk
 
 This is my config for the Dactyl Manuform 6x6.
+It supports ZMK Studio
+
 
 ## Layout
 ### DEFAULT 0
-![Screenshot 2023-07-09 at 1 20 54 AM](https://github.com/nidzola/dactyl-manuform-5x6-zmk/assets/3450224/97fbda14-c02e-49ac-bf4e-c979eccc10ae)
+![Default](https://github.com/user-attachments/assets/afed2455-4d0b-41cf-b629-ecaf54a45d91)
 
 ### LWR
-![Screenshot 2023-07-09 at 1 21 34 AM](https://github.com/nidzola/dactyl-manuform-5x6-zmk/assets/3450224/5adf8530-5e0b-4c2d-b56b-56d2dbff1a4b)
+![Lower](https://github.com/user-attachments/assets/59a8c71a-afe6-4b93-a27c-69d8faffc154)
 
 ### RSE
-![Screenshot 2023-07-09 at 1 21 54 AM](https://github.com/nidzola/dactyl-manuform-5x6-zmk/assets/3450224/deaca9ed-2b0d-44b6-a363-5034b9309f7b)
+![Rised](https://github.com/user-attachments/assets/0d97a3a2-f85e-4113-a456-0651e0e3a256)
 
 ### ADJ
-TBD screenshot
+![Settings](https://github.com/user-attachments/assets/a52f05ea-3d46-45e1-a70c-62d7c0bf734d)
 
 
 ## Good to know
