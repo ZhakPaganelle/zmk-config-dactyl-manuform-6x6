@@ -1,6 +1,7 @@
 # dactyl-manuform-6x6-zmk
 
 This is my config for the Dactyl Manuform 6x6.
+
 It supports ZMK Studio
 
 
