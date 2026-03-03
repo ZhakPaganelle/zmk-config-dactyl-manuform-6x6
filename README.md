@@ -2,18 +2,19 @@
 
 This is my config for the Dactyl Manuform 5x6.
 
+
 ## Layout
 ### DEFAULT 0
-![Screenshot 2023-07-09 at 1 20 54 AM](https://github.com/nidzola/dactyl-manuform-5x6-zmk/assets/3450224/97fbda14-c02e-49ac-bf4e-c979eccc10ae)
+![Default](https://github.com/user-attachments/assets/aa80ab56-c085-4649-aa5d-e79d1195f483)
 
 ### LWR
-![Screenshot 2023-07-09 at 1 21 34 AM](https://github.com/nidzola/dactyl-manuform-5x6-zmk/assets/3450224/5adf8530-5e0b-4c2d-b56b-56d2dbff1a4b)
+![Lower](https://github.com/user-attachments/assets/3a0c995e-2f6a-4f3a-bd98-70c4f7445840)
 
 ### RSE
-![Screenshot 2023-07-09 at 1 21 54 AM](https://github.com/nidzola/dactyl-manuform-5x6-zmk/assets/3450224/deaca9ed-2b0d-44b6-a363-5034b9309f7b)
+![Rised](https://github.com/user-attachments/assets/9a6ff6df-3d01-42f5-8807-3c0d89bbbe0b)
 
 ### ADJ
-TBD screenshot
+![Settings](https://github.com/user-attachments/assets/b0dc2096-9bd9-4b97-9daa-a88883e145ee)
 
 
 ## Good to know
