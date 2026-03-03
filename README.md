@@ -3,19 +3,25 @@
 This is my config for the Dactyl Manuform 6x6.
 It supports ZMK Studio
 
+**!This keymap is a cursed abomination!**
+
+I made it for myself and strictly discourage you from using it
+
+Use one from main branch instead
+
 
 ## Layout
 ### DEFAULT 0
-![Default](https://github.com/user-attachments/assets/afed2455-4d0b-41cf-b629-ecaf54a45d91)
+![Default](https://github.com/user-attachments/assets/8229f10b-ac3b-4cc6-87ba-4d0ac0dbdbab)
 
 ### LWR
-![Lower](https://github.com/user-attachments/assets/59a8c71a-afe6-4b93-a27c-69d8faffc154)
+![Lower](https://github.com/user-attachments/assets/5c6be9dc-65a3-4cd9-8006-944f87c30044)
 
 ### RSE
-![Rised](https://github.com/user-attachments/assets/0d97a3a2-f85e-4113-a456-0651e0e3a256)
+![Rised](https://github.com/user-attachments/assets/8a0e34b1-3b9d-4ceb-b72f-30022a086735)
 
 ### ADJ
-![Settings](https://github.com/user-attachments/assets/a52f05ea-3d46-45e1-a70c-62d7c0bf734d)
+![Settings](https://github.com/user-attachments/assets/d4f48563-1783-4e73-bcd0-6d65674c5e9a)
 
 
 ## Good to know
