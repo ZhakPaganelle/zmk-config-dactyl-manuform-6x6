@@ -4,6 +4,8 @@ This is my config for the Dactyl Manuform 6x6.
 
 It supports ZMK Studio
 
+Also has [5x6 config](https://github.com/ZhakPaganelle/zmk-config-dactyl-manuform-6x6/releases/tag/5x6) in releases
+
 
 ## Layout
 ### DEFAULT 0
